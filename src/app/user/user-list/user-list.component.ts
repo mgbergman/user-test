@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
 import { User } from '../user.class';
+import { ActivatedRoute } from '@angular/router';
+import { Route } from '@angular/compiler/src/core';
 
 
 @Component({
@@ -14,7 +16,9 @@ export class UserListComponent implements OnInit {
   tableStyle : string = "table table-sm";
 
   constructor(
-    private userscv: UserService
+    private userscv: UserService,
+   
+
   ) { }
 
   ngOnInit(): void {

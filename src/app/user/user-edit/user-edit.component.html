@@ -38,7 +38,7 @@
     <tr>
         <th>Email</th>
         <td>
-            <input [(ngModel)]="user.phoneNumber" type="text" size="10">
+            <input [(ngModel)]="user.email" type="text" size="10">
         </td>
     </tr>
     <tr>
@@ -51,5 +51,11 @@
         <th>Reviewer</th>
         <td>
             <input [(ngModel)]="user.isReviewer" type="checkbox" size="10">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            <button (click)="save()" class= "btn btn-primary">Save</button>
         </td>
     </tr>
